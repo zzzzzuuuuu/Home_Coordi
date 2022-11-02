@@ -1,0 +1,89 @@
+/* 기본적인 스타일 : 전체 페이지 적용 */
+/* 클래스명 생성은 자기 맘대로 ㅋ 근대 알아볼수 있게 */
+body{margin:0;padding:0;}
+a{text-decoration: none;}/* 밑줄 없애기 */
+.full_width{width:1024px;margin:0 auto;}/* 각 페이지 가로 사이즈 지정 */
+
+/* 상단 검색과 로그인 회원가입 버튼이 있는 영역 */
+.top_block{border-top:2px solid #000;text-align:right;padding:5px 10px 5px 0;}
+.top_block .search{padding:5px;border:0;background:#f5f5f5;vertical-align: top;font-size:16px}
+.top_block input[type=submit]{background:#f5f5f5;color:#000;padding:5.5px  10px;border:0;margin: 0 300px 0 0;}
+.top_block .bt_login_join{color:#fff;background:#000;display:inline-block;padding:3px 7px;font-size:11.1px;font-weight:400;line-height:15px;height:15px;word-spacing:0px;letter-spacing:1px;text-decoration:none;margin:0 0 2px;text-align:center;border-radius:4px}
+
+/* 왼쪽 영역 */
+header{float:left;width:160px;padding:0 40px 0 10px;box-sizing:border-box;}
+header h1 a img{width:100%}/* 로고 */
+h2{text-align:left;font-size:9px;font-weight:700;color:#111;letter-spacing:3px;text-transform:uppercase;margin:20px 7px 10px;}
+/* 매뉴 */
+.nav{list-style: none;padding:0 0 0 10px}
+.nav li a{color:#1e1e1e;display: block;padding: 5px 7px;font-size: 11.1px;font-weight: 400;line-height: 15px;height: 15px;word-spacing: 0px;letter-spacing: 1px;text-decoration: none;margin: 0;}
+.clear-both:after{content:'';display:block;clear:both}
+/* 레이아웃을 잡을때 왼쪽 오른쪽(float:left)을 잡은 뒤 clear-both를 사용해야 그다음에 사용하는 영역은 밑에 위치함 */
+
+/* 슬라이드 */
+/* 오픈 소스를 가져와서 사용함 */
+.swiper {width: 100%;height:100%;}
+.swiper-slide {text-align: center;font-size: 18px;background: #fff;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
+.swiper-slide img {display: block;width: 100%;height:100%;object-fit: cover;}
+
+/* 메인 상품리스트, 카테고리 상품리스트 공통으로 사용함  */
+main{float:left;width:853px}/* header와 main에 float를 주고 상위 div에  clear-both클래스를 줌 */
+main .product_img_price{float:left;margin:30px 67px;text-align:center;}/* 이미지와 가격이 있는 영역*/
+main .product_img_price img{width:150px;}/* 이미지 */
+main .product_img_price .pro_title{margin:10px 0 5px;font-size:13px;color:#000;}
+main .product_img_price .pro_title{color:#666}
+main .product_img_price .pro_price{font-size:12px;color:red;}
+main .product_img_price .pro_price:hover{color:red;}/* a태그를 사용하면 hover를 사용해서 마우스를 올렸을때 색을 지정을 해줘야 함 기본은 보라색 */
+main .product_list:after{content:'';display:block;clear:both}/* 위의 레이아웃 잡을때 사용하는것과 비슷 */
+
+/* 하단 주소부분엔 address 태그를 씀 */
+footer{border-top:2px solid #000;padding:5px 0;}
+address{font-style:normal;color:#1e1e1e;display: block;padding: 5px 7px 20px;font-size: 11.1px;font-weight: 400;line-height: 15px;height: 15px;word-spacing: 0px;letter-spacing: 1px;margin: 0;text-align:center}
+
+/* 로그인 회원가입 공통으로 사용함 */
+.sub_page{float:left;width:853px;background:#e3e5e9;}
+.loginjoin_box{background:#fff;width:450px;margin:40px auto 60px;padding:20px 0 50px;box-shadow: 0 0 15px rgb(0 0 0 / 10%);}
+.loginjoin_box h2{text-align:center;margin:0 0 30px}
+.loginjoin_box input[type=text],
+.loginjoin_box input[type=password]{display:block;border:0;background:#f6f6f7;width:390px;padding:8px 10px;border:0;background:#f5f5f5;font-size:11px;margin:10px auto;}
+.loginjoin_box .login_btn{width:390px;font-size:11px;height: 40px;line-height: 38px;border-radius:22px;display: block;margin: 10px auto;text-align: center;color: #fff;position: relative;background: #2c3546;border: 2px solid #2c3546;opacity: 1;box-shadow: 0 2px 5px rgb(50 50 50 / 20%);}
+
+/* 카테고리 타이틀 */
+.category_title{position: relative;text-align:center;font:700 13px/20px Lato,Nanum Gothic;letter-spacing: 3px;color: #333;margin:20px 0;}
+.category_title:after {display: block;content: "";position: absolute;left: 50%;top:30px;margin: 0 0 0 -15px;
+    width: 30px;height: 2px;background: #eee;}
+/* 페이지 영역 */
+.page-block{text-align:center;margin:20px 0 40px;}
+.page-block a{display:inline-block;border:1px solid #999;color:#999;padding:0 5px;box-sizing:border-box}
+.page-block a:hover{background:#000;color:#fff;}
+.page-block .on{color:#000;border:2px solid #000}/* on 클래스를 줘서 현재페이지라는 표시를 함 */
+
+/* 상품상세페이지 */
+.product_detail{width:100%;}
+.product_detail:after {display: block;content: "";clear:both;}
+
+.product_detail_img{float:left;width:70%;}
+/*.product_detail_img .big_img img{width:100%;height:300px;}
+.product_detail_img .small_img{text-align:center}
+.product_detail_img .small_img img{width:50px;}
+*/
+.img-bt{margin:10px auto;}
+.img-bt .swiper-wrapper{justify-content: center;}
+.img-bt .swiper-slide{width:50px !important}
+.img-bt img{width:50px;}
+.product_detail_centent{float:left;width:30%;padding:10px 0 0 10px;box-sizing:border-box}
+/* 새상품 중고 대여 */
+.product_new_used_rental{margin:30px 0 50px}
+.product_new_used_rental:after {display: block;content: "";clear:both}
+.product_new,
+.product_used,
+.product_rental{float:left;width:31%;margin:0 1%;background:#f9f9f9;}
+.pro_nur{font-size: 12px;text-align: center;padding: 10px 0;}
+.pro_nur_t:after {display: block;content: "";clear:both}
+.pro_nur_t .bp{float:left;width:47%;margin:0 1%;border-bottom:1px solid #000;text-align:center;font-size:12px;}
+/* 스크롤 바 */
+.product_new_used_rental .scroll{width:100%;height:300px;overflow:auto;-ms-overflow-style: none;}
+.product_new_used_rental .scroll::-webkit-scrollbar{width: 5px;}
+.product_new_used_rental .scroll::-webkit-scrollbar-thumb {height:30%;background: #000;border-radius: 10px;}
+.product_new_used_rental .scroll table{border:0;width:100%;}
+.product_new_used_rental .scroll table td{background:#dddbdb;color:#000;width:50%;font-size:12px;padding:8px 0;text-align:center;}
