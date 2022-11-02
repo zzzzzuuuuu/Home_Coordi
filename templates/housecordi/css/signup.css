@@ -61,43 +61,52 @@ div {
     display: flex;
     justify-content: space-between;
     line-height: 35px;
+    width: 50px;
 }
 
 #phone1 {
-    width: 18%;
+    width: 20%;
+    display:block;border:0;background:#f6f6f7;width:200px;padding:8px 10px;border:0;background:#f5f5f5;font-size:11px;margin:10px auto;
 }
-
-.auth {
-    display: flex;
-    justify-content: space-between;
-}
-
-.timer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.auth div {
+#phone2 {
     width: 30%;
-    text-align: center;
-    font-weight: 700;
-    font-size: 15px;
 }
 
-.auth button {
-    width: 70%;
-}
-
-.timer div {
+#phone3 {
     width: 30%;
-    text-align: center;
-    font-weight: 700;
-    font-size: 15px;
 }
 
-.timer button {
-    width: 70%;
-}
+/*.auth {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+/*.timer {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+/*.auth div {*/
+/*    width: 30%;*/
+/*    text-align: center;*/
+/*    font-weight: 700;*/
+/*    font-size: 15px;*/
+/*}*/
+
+/*.auth button {*/
+/*    width: 70%;*/
+/*}*/
+
+/*.timer div {*/
+/*    width: 30%;*/
+/*    text-align: center;*/
+/*    font-weight: 700;*/
+/*    font-size: 15px;*/
+/*}*/
+
+/*.timer button {*/
+/*    width: 70%;*/
+/*}*/
 
 .area select {
     width: 100%;
