@@ -1,0 +1,5 @@
+/* 기본적인 스타일 : 전체 페이지 적용 */
+/* 클래스명 생성은 자기 맘대로 ㅋ 알아볼수 있게만 */
+body{margin:0;padding:0;}
+a{text-decoration: none;}/* 밑줄 없애기 */
+.full_width{width:1024px;margin:0 auto;}/* 각 페이지 가로 사이즈 지정 */

@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>회원가입</title>
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+     <link href="signup.css" rel="stylesheet"> <!--rel 현재문서와 연결문서의 관계 표시-->
+     <script src="signup.js"></script>
+ </head>
+
+ <body>
+	<div class="top_block full_width">
+		<input type="text" class="search"><input type="submit" value="검색">
+			<a href="login.html" class="bt_login_join">로그인</a>
+			<a href="signup.html" class="bt_login_join">회원가입</a>
+	</div>
+
+	<div class="full_width clear-both">
+		<header>
+			<h1><a href="main.html"><img src="img/top_logo.png"></a></h1>
+			<h2>category</h2>
+			<nav>
+				<ul class="nav">
+					<li><a href="">책상</a></li>
+					<li><a href="">테이블</a></li>
+					<li><a href="">소파</a></li>
+					<li><a href="">의자</a></li>
+					<li><a href="">화장대</a></li>
+					<li><a href="">옷장</a></li>
+					<li><a href="">서랍장</a></li>
+					<li><a href="">책장</a></li>
+					<li><a href="">행거</a></li>
+					<li><a href="">침대</a></li>
+					<li><a href="">소품류</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="sub_page">
+			<!-- 회원가입 시작 -->
+			<div class="loginjoin_box">
+
+				<h1 style="text-align: center;">Sign Up</h1>
+
+                <div class="name"> <!--이름-->
+                    <input id="name"  type="text" placeholder="이름을 입력해 주세요.">
+                    <div id="nameError" class="error"></div>
+                </div>
+                <div class="email"> <!--이메일-->
+                    <input id="email" type="text" placeholder="이메일을 입력해 주세요.">
+                    <div id="emailError" class="error"></div>
+                </div>
+                <div class="password"> <!--비밀번호-->
+                    <input id="password" type="password" placeholder="비밀번호를 입력해 주세요.">
+                    <div id="passwordError" class="error"></div>
+                </div>
+                <div class="passwordCheck"> <!--비밀번호확인-->
+                    <input id="passwordCheck" type="password" placeholder="비밀번호를 다시 입력해 주세요.">
+                    <div id="passwordCheckError" class="error"></div>
+                </div>
+
+                <p>전화번호를 입력해 주세요.</p>
+
+                <div class="phone"> <!--전화번호-->
+                    <input id="phone1" type="" size="1" maxlength="3" oninput="changePhone1()"> -
+                    <input id="phone2" type="" size="3" maxlength="4" oninput="changePhone2()"> -
+                    <input id="phone3" type="" size="3" maxlength="4" oninput="changePhone3()">
+                </div>
+                <!--<div class="auth">
+                    <div id="certificationNumber">000000</div>
+                    <button disabled id="sendMessage" onclick="getToken()">인증번호 전송</button> 인증번호 버튼
+                </div>
+                <div class="timer">
+                    <div id="timeLimit">03:00</div>
+                    <button disabled id="completion" onclick="checkCompletion()">인증확인</button>
+                </div> -->
+                <div class="area"> <!-- 지역부분인데 근데 넣읊 필요가 있을까? -->
+                    <select id="area">
+                        <option selected disabled>지역을 선택하세요</option>
+                        <option>서울특별시</option>
+                        <option>부산광역시</option>
+                        <option>인천광역시</option>
+                        <option>대구광역시</option>
+                        <option>대전광역시</option>
+                        <option>광주광역시</option>
+                        <option>울산광역시</option>
+                        <option>세종특별자치시</option>
+                        <option>경기도</option>
+                        <option>강원도</option>
+                        <option>충청북도</option>
+                        <option>충청남도</option>
+                        <option>전라북도</option>
+                        <option>전라남도</option>
+                        <option>경상북도</option>
+                        <option>경상남도</option>
+                        <option>제주특별자치도</option>
+                    </select>
+                    <div id="areaError" class="error"></div>
+
+				<a href="" onclick="" class="login_btn">회원가입하기</a>
+			</div>
+		</div>
+	</div>
+
+	<footer class="full_width">
+		<address>
+			<!--추가예정..-->
+		</address>
+	</footer>
+
+    </div>
+ </body>
+</html>

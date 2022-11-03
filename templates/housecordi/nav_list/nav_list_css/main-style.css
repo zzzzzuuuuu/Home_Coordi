@@ -1,0 +1,15 @@
+/* 슬라이드 */
+/* 오픈 소스를 가져와서 사용함 */
+.swiper {width: 100%;height:100%;}
+.swiper-slide {text-align: center;font-size: 18px;background: #fff;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
+.swiper-slide img {display: block;width: 100%;height:100%;object-fit: cover;}
+
+/* 메인 상품리스트, 카테고리 상품리스트 공통으로 사용함  */
+main{float:left;width:853px}/* header와 main에 float를 주고 상위 div에  clear-both클래스를 줌 */
+main .product_img_price{float:left;margin:30px 67px;text-align:center;}/* 이미지와 가격이 있는 영역*/
+main .product_img_price img{width:150px;}/* 이미지 */
+main .product_img_price .pro_title{margin:10px 0 5px;font-size:13px;color:#000;}
+main .product_img_price .pro_title{color:#666}
+main .product_img_price .pro_price{font-size:12px;color:red;}
+main .product_img_price .pro_price:hover{color:red;}/* a태그를 사용하면 hover를 사용해서 마우스를 올렸을때 색을 지정을 해줘야 함 기본은 보라색 */
+main .product_list:after{content:'';display:block;clear:both}/* 위의 레이아웃 잡을때 사용하는것과 비슷 */
