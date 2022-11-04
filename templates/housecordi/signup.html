@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="ko">
+
  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
@@ -8,7 +9,7 @@
      <link rel="stylesheet" href="css/style.css">
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
      <link href="signup.css" rel="stylesheet"> <!--rel 현재문서와 연결문서의 관계 표시-->
-     <script src="signup.js"></script>
+     <script src="js/signup.js"></script>
  </head>
 
  <body>
@@ -24,17 +25,16 @@
 			<h2>category</h2>
 			<nav>
 				<ul class="nav">
-					<li><a href="">책상</a></li>
-					<li><a href="">테이블</a></li>
-					<li><a href="">소파</a></li>
-					<li><a href="">의자</a></li>
-					<li><a href="">화장대</a></li>
-					<li><a href="">옷장</a></li>
-					<li><a href="">서랍장</a></li>
-					<li><a href="">책장</a></li>
-					<li><a href="">행거</a></li>
-					<li><a href="">침대</a></li>
-					<li><a href="">소품류</a></li>
+					<li><a href="nav_list.html">책상</a></li>
+					<li><a href="nav_list.html">소파</a></li>
+					<li><a href="nav_list.html">의자</a></li>
+					<li><a href="nav_list.html">화장대</a></li>
+					<li><a href="nav_list.html">옷장</a></li>
+					<li><a href="nav_list.html">서랍장</a></li>
+					<li><a href="nav_list.html">책장</a></li>
+					<li><a href="nav_list.html">행거</a></li>
+					<li><a href="nav_list.html">침대</a></li>
+					<li><a href="nav_list.html">소품류</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -43,7 +43,7 @@
 			<!-- 회원가입 시작 -->
 			<div class="loginjoin_box">
 
-				<h1 style="text-align: center;">Sign Up</h1>
+				<h2 style="text-align: center;">Sign Up</h2>
 
                 <div class="name"> <!--이름-->
                     <input id="name"  type="text" placeholder="이름을 입력해 주세요.">
@@ -65,9 +65,9 @@
                 <p>전화번호를 입력해 주세요.</p>
 
                 <div class="phone"> <!--전화번호-->
-                    <input id="phone1" type="" size="1" maxlength="3" oninput="changePhone1()"> -
-                    <input id="phone2" type="" size="3" maxlength="4" oninput="changePhone2()"> -
-                    <input id="phone3" type="" size="3" maxlength="4" oninput="changePhone3()">
+                    <input id="phone1" type="phonenumber" size="1" maxlength="3" oninput="changePhone1()"> -
+                    <input id="phone2" type="phonenumber" size="3" maxlength="4" oninput="changePhone2()"> -
+                    <input id="phone3" type="phonenumber" size="3" maxlength="4" oninput="changePhone3()">
                 </div>
                 <!--<div class="auth">
                     <div id="certificationNumber">000000</div>
