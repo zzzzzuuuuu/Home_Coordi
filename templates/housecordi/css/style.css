@@ -54,8 +54,8 @@ address{font-style:normal;color:#1e1e1e;display: block;padding: 5px 7px 20px;fon
 .loginjoin_box h2{text-align:center;margin:0 0 30px}
 .loginjoin_box input[type=text],
 .loginjoin_box input[type=password]{display:block;border:0;background:#f6f6f7;width:390px;padding:8px 10px;border:0;background:#f5f5f5;font-size:11px;margin:10px auto;}
+.loginjoin_box input[type=phonenumber]{text-align:center;display:inline-block;border:0;background:#f6f6f7; width: 50px; padding:8px 10px;border:0;background:#f5f5f5;font-size:11px;margin:0 auto;}
 .loginjoin_box .login_btn{width:390px;font-size:11px;height: 40px;line-height: 38px;border-radius:22px;display: block;margin: 10px auto;text-align: center;color: #fff;position: relative;background: #2c3546;border: 2px solid #2c3546;opacity: 1;box-shadow: 0 2px 5px rgb(50 50 50 / 20%);}
-
 /* 카테고리 타이틀 */
 .category_title{position: relative;text-align:center;font:700 13px/20px Lato,Nanum Gothic;letter-spacing: 3px;color: #333;margin:20px 0;}
 .category_title:after {display: block;content: "";position: absolute;left: 50%;top:30px;margin: 0 0 0 -15px;
