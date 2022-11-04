@@ -19,6 +19,6 @@ from .view import Sub
 
 urlpatterns = [
     path('admin/', admin.site.urls),  # 어드민은 로그인화면이
-    path('main/', Sub.as_view())
+    path('main/', Sub.as_view()),
 
 ]
