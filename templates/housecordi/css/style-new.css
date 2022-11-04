@@ -1,26 +1,25 @@
+
 /* 기본적인 스타일 : 전체 페이지 적용 */
 /* 클래스명 생성은 자기 맘대로 ㅋ 알아볼수 있게만 */
-/* 속성들은 검색하면 알수 있어요. */
 body{margin:0;padding:0;}
-a{text-decoration: none;}/* 링크 밑줄 없애기 */
+a{text-decoration: none;}/* 밑줄 없애기 */
 .full_width{width:1024px;margin:0 auto;}/* 각 페이지 가로 사이즈 지정 */
-/* margin:0 auto; 가운데로
-마진 패딩(padding) 둘다 똑같이 값을 줄수 있음, 위 오른쪽 아래 왼쪽 시계방향으로 */
 
 /* 상단 검색과 로그인 회원가입 버튼이 있는 영역 */
+
+/* main */
+body{margin:0;padding:0;}
+a{text-decoration: none;}
+.full_width{width:1024px;margin:0 auto;}
+>>>>>>> main
 .top_block{border-top:2px solid #000;text-align:right;padding:5px 10px 5px 0;}
 .top_block .search{padding:5px;border:0;background:#f5f5f5;vertical-align: top;font-size:16px}
-/*.top_block .search 탑 영역안에 있는 search를 지정 */
 .top_block input[type=submit]{background:#f5f5f5;color:#000;padding:5.5px  10px;border:0;margin: 0 300px 0 0;}
-/* input[type=submit] 인풋들 중에 타입이 submit을 지정
-   input중에 타입이 text, password 이것이 있어서 지정을 해줘야 함
-*/
 .top_block .bt_login_join{color:#fff;background:#000;display:inline-block;padding:3px 7px;font-size:11.1px;font-weight:400;line-height:15px;height:15px;word-spacing:0px;letter-spacing:1px;text-decoration:none;margin:0 0 2px;text-align:center;border-radius:4px}
 
 /* 왼쪽 영역 */
 header{float:left;width:160px;padding:0 40px 0 10px;box-sizing:border-box;}
-header h1 a img{width:100%}
-/* 로고 header 안에 h1 안에 a 안에 img를 지정 */
+header h1 a img{width:100%}/* 로고 */
 h2{text-align:left;font-size:9px;font-weight:700;color:#111;letter-spacing:3px;text-transform:uppercase;margin:20px 7px 10px;}
 /* 매뉴 */
 .nav{list-style: none;padding:0 0 0 10px}
@@ -69,16 +68,10 @@ address{font-style:normal;color:#1e1e1e;display: block;padding: 5px 7px 20px;fon
 /* 상품상세페이지 */
 .product_detail{width:100%;}
 .product_detail:after {display: block;content: "";clear:both;}
-
 .product_detail_img{float:left;width:70%;}
-/*.product_detail_img .big_img img{width:100%;height:300px;}
+.product_detail_img .big_img img{width:100%;height:300px;}
 .product_detail_img .small_img{text-align:center}
 .product_detail_img .small_img img{width:50px;}
-*/
-.img-bt{margin:10px auto;}
-.img-bt .swiper-wrapper{justify-content: center;}
-.img-bt .swiper-slide{width:50px !important}
-.img-bt img{width:50px;}
 .product_detail_centent{float:left;width:30%;padding:10px 0 0 10px;box-sizing:border-box}
 /* 새상품 중고 대여 */
 .product_new_used_rental{margin:30px 0 50px}
@@ -95,3 +88,34 @@ address{font-style:normal;color:#1e1e1e;display: block;padding: 5px 7px 20px;fon
 .product_new_used_rental .scroll::-webkit-scrollbar-thumb {height:30%;background: #000;border-radius: 10px;}
 .product_new_used_rental .scroll table{border:0;width:100%;}
 .product_new_used_rental .scroll table td{background:#dddbdb;color:#000;width:50%;font-size:12px;padding:8px 0;text-align:center;}
+
+header{float:left;width:160px;padding:0 40px 0 10px;box-sizing:border-box;}
+header h1 a img{width:100%}
+header nav{}
+h2{text-align:left;font-size:9px;font-weight:700;color:#111;letter-spacing:3px;text-transform:uppercase;margin:20px 7px 10px;}
+.nav{list-style: none;padding:0 0 0 10px}
+.nav li{}
+.nav li a{color:#1e1e1e;display: block;padding: 5px 7px;font-size: 11.1px;font-weight: 400;line-height: 15px;height: 15px;word-spacing: 0px;letter-spacing: 1px;text-decoration: none;margin: 0;}
+
+.clear-both:after{content:'';display:block;clear:both}
+main{float:left;width:853px}
+
+
+/* main_slide */
+.swiper {width: 100%;height:100%;}
+.swiper-slide {text-align: center;font-size: 18px;background: #fff;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
+
+.swiper-slide img {display: block;width: 100%;height:100%;object-fit: cover;}
+
+
+footer{border-top:2px solid #000;padding:5px 0;}
+address{font-style:normal;color:#1e1e1e;display: block;padding: 5px 7px 20px;font-size: 11.1px;font-weight: 400;line-height: 15px;height: 15px;word-spacing: 0px;letter-spacing: 1px;margin: 0;text-align:center}
+
+/* loginjoin_box */
+.sub_page{float:left;width:853px;background:#e3e5e9;}
+.loginjoin_box{background:#fff;width:450px;margin:40px auto 60px;padding:20px 0 50px;box-shadow: 0 0 15px rgb(0 0 0 / 10%);} /*흰색칸*/
+.loginjoin_box h2{text-align:center;margin:0 0 30px}
+.loginjoin_box input[type=text],
+.loginjoin_box input[type=password]{display:block;border:0;background:#f6f6f7;width:390px;padding:8px 10px;border:0;background:#f5f5f5;font-size:11px;margin:10px auto;} /*입력칸*/
+.loginjoin_box .login_btn{width:390px;font-size:11px;height: 40px;line-height: 38px;border-radius:22px;display: block;margin: 10px auto;text-align: center;color: #fff;position: relative;background: #2c3546;border: 2px solid #2c3546;opacity: 1;box-shadow: 0 2px 5px rgb(50 50 50 / 20%);}
+>>>>>>> main
